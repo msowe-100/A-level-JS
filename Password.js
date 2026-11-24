@@ -284,7 +284,7 @@ generatedPassword += randomCharacter
 }
 
 else if(optionSelection==="3"){
-    console.log("You have selected the Quit(3) option")
+    console.log("You have succesfully quit this application")
 }
 
 else{
