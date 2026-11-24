@@ -129,9 +129,15 @@ symbolScore === false){
 
         sequence = sequence.toLowerCase()
 
+       let revSequence = passwordcheck[i+2] + passwordcheck[i+1] + passwordcheck[i]
+        revSequence = revSequence.toLowerCase()
+
         if(topRow.includes(sequence)||
         middleRow.includes(sequence)||
-        bottomRow.includes(sequence)){
+        bottomRow.includes(sequence)||
+        topRow.includes(revSequence)||
+        middleRow.includes(revSequence)||
+        bottomRow.includes(revSequence)){
             passwordScore -= 5
         }
     }
@@ -253,17 +259,23 @@ generatedDigitScore === false &&
 generatedSymbolScore === false){
     generatedPasswordScore -= 5
 }
-    for(let i=0; i+2<generatedPassword.length; i++){
+   for(let i=0; i+2<generatedPassword.length; i++){
 
         let generatedSequence = generatedPassword[i] + generatedPassword[i+1] + generatedPassword[i+2]
 
-   generatedSequence = generatedSequence.toLowerCase()
+        generatedSequence = generatedSequence.toLowerCase()
+        let revGeneratedSequence = generatedPassword[i+2] + generatedPassword[i+1] + generatedPassword[i]
+        revGeneratedSequence = revGeneratedSequence.toLowerCase()
 
         if(topRow.includes(generatedSequence)||
         middleRow.includes(generatedSequence)||
-        bottomRow.includes(generatedSequence)){
+        bottomRow.includes(generatedSequence)||
+        topRow.includes(revGeneratedSequence)||
+        middleRow.includes(revGeneratedSequence)||
+        bottomRow.includes(revGeneratedSequence)){
             generatedPasswordScore -= 5
-        }}
+        }
+    }
     
 
 
