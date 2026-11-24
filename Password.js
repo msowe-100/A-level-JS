@@ -155,7 +155,7 @@ symbolScore === false){
     }
     }
     else{
-        console.log("Error! Your passowrd has INVALID characters")
+        console.log("Error! Your password has INVALID characters")
     }
     }
 }
@@ -294,7 +294,7 @@ generatedSymbolScore === false){
 }
 
 else if(optionSelection==="3"){
-    console.log("You have succesfully quit this application")
+    console.log("You have successfully quit this application")
 }
 
 else{
