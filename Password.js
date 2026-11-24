@@ -95,9 +95,9 @@ if(optionSelection==="1"){
         passwordScore += 5
     }
 
-    if(capitalScore === true &
-    lowerCaseScore === true &
-    digitScore === true &
+    if(capitalScore === true &&
+    lowerCaseScore === true &&
+    digitScore === true &&
     symbolScore === true)
     {
         passwordScore += 10
@@ -109,16 +109,16 @@ symbolScore === false){
     passwordScore -= 5
 }
 
-    if(capitalScore === false &
-    lowerCaseScore === false &
-    digitScore === true &
+    if(capitalScore === false &&
+    lowerCaseScore === false &&
+    digitScore === true &&
     symbolScore === false){
         passwordScore -= 5
     }
 
-    if(capitalScore === false &
-    lowerCaseScore === false &
-    digitScore === false &
+    if(capitalScore === false &&
+    lowerCaseScore === false &&
+    digitScore === false &&
     symbolScore === true){
         passwordScore -= 5
     }
@@ -227,30 +227,30 @@ generatedPassword += randomCharacter
         generatedPasswordScore += 5
     }
 
-    if(generatedCapitalScore === true &
-    generatedLowerCaseScore === true &
-    generatedDigitScore === true &
+    if(generatedCapitalScore === true &&
+    generatedLowerCaseScore === true &&
+    generatedDigitScore === true &&
     generatedSymbolScore === true)
     {
         generatedPasswordScore += 10
     }
 
-    if(generatedCapitalScore === true &
-    generatedLowerCaseScore === true &
-    generatedDigitScore === false &
+    if(generatedCapitalScore === true &&
+    generatedLowerCaseScore === true &&
+    generatedDigitScore === false &&
     generatedSymbolScore === false)
     {generatedPasswordScore -= 5}
 
-    if(generatedCapitalScore === false &
-    generatedLowerCaseScore === false &
-    generatedDigitScore === true &
+    if(generatedCapitalScore === false &&
+    generatedLowerCaseScore === false &&
+    generatedDigitScore === true &&
     generatedSymbolScore === false){
         generatedPasswordScore -= 5
     }
 
-    if(generatedCapitalScore === false &
-    generatedLowerCaseScore === false &
-    generatedDigitScore === false &
+    if(generatedCapitalScore === false &&
+    generatedLowerCaseScore === false &&
+    generatedDigitScore === false &&
     generatedSymbolScore === true){
         generatedPasswordScore -= 5
     }
