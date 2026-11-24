@@ -103,11 +103,11 @@ if(optionSelection==="1"){
         passwordScore += 10
     }
 
-    if(
-    lowerCaseScore === true &
-    digitScore === false &
-    symbolScore === false)
-    {passwordScore -= 5}
+   if((capitalScore === true || lowerCaseScore === true) &&
+digitScore === false &&
+symbolScore === false){
+    passwordScore -= 5
+}
 
     if(capitalScore === false &
     lowerCaseScore === false &
@@ -248,13 +248,11 @@ generatedPassword += randomCharacter
     generatedSymbolScore === true){
         generatedPasswordScore -= 5
     }
-    if(
-    generatedLowerCaseScore === true &
-    generatedDigitScore === false&
-    generatedSymbolScore === false){
-        generatedPasswordScore -= 5
-    }
-
+    if((generatedCapitalScore === true || generatedLowerCaseScore === true) &&
+generatedDigitScore === false &&
+generatedSymbolScore === false){
+    generatedPasswordScore -= 5
+}
     for(let i=0; i+2<generatedPassword.length; i++){
 
         let generatedSequence = generatedPassword[i] + generatedPassword[i+1] + generatedPassword[i+2]
