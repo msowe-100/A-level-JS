@@ -235,11 +235,6 @@ generatedPassword += randomCharacter
         generatedPasswordScore += 10
     }
 
-    if(generatedCapitalScore === true &&
-    generatedLowerCaseScore === true &&
-    generatedDigitScore === false &&
-    generatedSymbolScore === false)
-    {generatedPasswordScore -= 5}
 
     if(generatedCapitalScore === false &&
     generatedLowerCaseScore === false &&
